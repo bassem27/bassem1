@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>module2-solution</title>
+</head>
+<style >
+	
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-color: white;
+	}
+	h1 {
+		padding: 10px;
+		text-align: center;
+		font-family: Helvetica;
+		font-weight: bold;
+		font-size: 200%;
+	}
+	section {
+		position: relative;
+		padding: 10px;
+		width: 90%;
+	}
+	p {
+		position: relative;
+		clear: right;
+	}
+	div {
+		position: relative;
+		background-color: gray;
+		border: 1px solid black;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+
+	.Big {
+		padding: 8px;
+		background-color: gray;
+		font-family: Helvetica;
+		color: black;
+		height: 160px;
+		overflow: auto;
+        margin: 0px;
+	}
+
+	.small1 {
+		float: right;
+		width: 110px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 120%;
+		font-weight: bold;
+		background-color: darkcyan;
+		
+	}
+	.small2 {
+		float: right;
+		color: white;
+		width: 110px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 120%;
+		font-weight: bold;
+		background-color: darkgreen;
+		
+	}
+	.small3 {
+		color: black;
+		float: right;
+		width: 110px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 120%;
+		font-weight: bold;
+		background-color: orangered;
+    }	
+	
+	
+	.row {
+		width: 100%;
+	}
+	
+	/**************SIZE 1 computer*****************/
+	@media (min-width: 992px){
+		.column-lg-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	   /*************SIZE2 tablet******************/
+	@media (min-width: 768px) and (max-width: 991px){
+		.colmn-md-6 {
+			float: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.colmn-md-12 {
+			float: left;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	/***************SIZE3 mobile*****************/
+	@media (max-width: 767px){
+		.colmn-sm-12 {
+			float: right;
+			width: 100%;
+    
+		
+            
+		}
+	}
+</style>
+<body >
+<h1>Fruit list</h1>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="small1">pineapple</p>
+			<p class="Big">
+                The pineapple(Ananas comosus) is a tropical plant with an edible fruit and the most
+                 economically significant plant in the family Bromeliaceae.The pineapple is indigenous to South
+                  America, where it has been cultivated for many centuries. The introduction of the pineapple to Europe
+                   in the 17th century made it a significant cultural icon of luxury.
+			</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="small2">Watermelon</p>
+			<p class="Big">Watermelon (Citrullus lanatus) is a plant species in the 
+                family Cucurbitaceae, a vine-like flowering plant originally domesticated in West Africa. 
+                It is a highly cultivated fruit worldwide, having more than 1000 varieties.
+                </p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-12 colmn-sm-12">
+	<div>
+		<p class="small3">Strawberry</p>
+			<p class="Big">The garden strawberry (or simply strawberry; Fragaria × ananassa) 
+                is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries,
+                 which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma,
+                  bright red color, juicy texture, and sweetness. It is consumed in large quantities
+                    </p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>module2-solution</title>
+</head>
+<style >
+	
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-color: white;
+	}
+	h1 {
+		padding: 10px;
+		text-align: center;
+		font-family: Helvetica;
+		font-weight: bold;
+		font-size: 200%;
+	}
+	section {
+		position: relative;
+		padding: 10px;
+		width: 90%;
+	}
+	p {
+		position: relative;
+		clear: right;
+	}
+	div {
+		position: relative;
+		background-color: gray;
+		border: 1px solid black;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+
+	.Big {
+		padding: 8px;
+		background-color: gray;
+		font-family: Helvetica;
+		color: black;
+		height: 160px;
+		overflow: auto;
+        margin: 0px;
+	}
+
+	.small1 {
+		float: right;
+		width: 110px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 120%;
+		font-weight: bold;
+		background-color: darkcyan;
+		
+	}
+	.small2 {
+		float: right;
+		color: white;
+		width: 110px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 120%;
+		font-weight: bold;
+		background-color: darkgreen;
+		
+	}
+	.small3 {
+		color: black;
+		float: right;
+		width: 110px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 120%;
+		font-weight: bold;
+		background-color: orangered;
+    }	
+	
+	
+	.row {
+		width: 100%;
+	}
+	
+	/**************SIZE 1 computer*****************/
+	@media (min-width: 992px){
+		.column-lg-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	   /*************SIZE2 tablet******************/
+	@media (min-width: 768px) and (max-width: 991px){
+		.colmn-md-6 {
+			float: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.colmn-md-12 {
+			float: left;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	/***************SIZE3 mobile*****************/
+	@media (max-width: 767px){
+		.colmn-sm-12 {
+			float: right;
+			width: 100%;
+    
+		
+            
+		}
+	}
+</style>
+<body>
+</body>
+</html>
